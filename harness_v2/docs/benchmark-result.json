@@ -1,0 +1,8 @@
+{
+  "input_bytes": 210845309,
+  "records": 13107,
+  "seconds": 4.443,
+  "query_hits": 8,
+  "workspace": ".test-workspace/benchmark-0ddbc057",
+  "synthetic": true
+}

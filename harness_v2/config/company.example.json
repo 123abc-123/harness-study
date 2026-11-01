@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://model.company.internal/v1/chat/completions",
+  "allowed_origins": ["https://model.company.internal"],
+  "model": "YOUR_INTERNAL_MODEL",
+  "protocol": "chat_tools",
+  "auth_env": "INTERNAL_MODEL_TOKEN",
+  "ca_file": null,
+  "allow_http": false,
+  "timeout_seconds": 60,
+  "max_response_bytes": 2097152
+}

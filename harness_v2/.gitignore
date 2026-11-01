@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+workspace/
+.test-workspace/
+.env
+config/company.json
+dist/

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "standard": "SYNTHETIC-JEDEC-LIKE",
+  "version": "A",
+  "provenance": {"parser_version": "demo-1", "graph_algorithm_version": "demo-1", "synthetic": true},
+  "sections": [
+    {
+      "stable_key": "timing", "number": "3", "title": "时序要求",
+      "text": "虚构示例，非 JEDEC 内容。以下参数仅适用于 Condition_A。",
+      "source": {"document": "synthetic-A", "clause": "3"},
+      "subsections": [
+        {
+          "stable_key": "timing.param_x", "number": "3.2", "title": "PARAM_X 参数",
+          "text": "在 Condition_A 下，PARAM_X 最小值为 10 ns。",
+          "source": {"document": "synthetic-A", "clause": "3.2"},
+          "entities": [
+            {"stable_key": "param_x", "type": "parameter", "name": "PARAM_X", "min": 10, "unit": "ns", "condition": "Condition_A"},
+            {"stable_key": "condition_a", "type": "condition", "name": "Condition_A", "description": "虚构工作条件"}
+          ],
+          "relations": [
+            {"stable_key": "param_x_condition_a", "source_id": "param_x", "target_id": "condition_a", "type": "APPLIES_UNDER", "origin": "extracted"}
+          ]
+        },
+        {
+          "stable_key": "legacy", "number": "3.3", "title": "旧条款",
+          "text": "这个虚构条款在 B 版删除。"
+        }
+      ]
+    }
+  ]
+}
