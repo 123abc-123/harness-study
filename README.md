@@ -1,6 +1,6 @@
 # KG Harness：先让 Agent 能操作文件
 
-**新增专题：[LPDDR6 JEDEC 正文 diff 方案](lpddr6_text_diff/README.md)**：正文改写与规范变更的区分、章节层次展示、评测指标与数据契约（设计方案与合成样例）。
+**独立专题：[LPDDR6 JEDEC 正文 diff 方案](https://github.com/123abc-123/lpddr6-text-diff)**：正文改写与规范变更的区分、章节层次展示、评测指标与数据契约（设计方案与合成样例）。此专题位于同一 GitHub 账号下的独立公开仓库。
 
 **公司内部模型版请从 [harness_v2](harness_v2/README.md) 开始。** 最新详细报告见 [JEDEC Agent 技术报告](harness_v2/docs/REPORT.zh-CN.md)，包含文件读写机制、成熟 coding agent 的难点与实际业务建设路线。下面保留第一版的使用说明。
 
