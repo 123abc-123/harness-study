@@ -1,0 +1,313 @@
+{
+  "synthetic_only": true,
+  "matcher": "lexical_context_groups",
+  "selection_cutoff": 0.5,
+  "traces": [
+    {
+      "case": "paraphrase",
+      "old_text": "The controller shall wait at least 10 ns after CMD_X.",
+      "old_title": "CMD_X timing",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "target"
+          ],
+          "text": "Following CMD_X, a minimum delay of 10 ns is required of the controller.",
+          "lexical": 0.2308,
+          "title": 1.0,
+          "score": 0.4615
+        },
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.3333,
+          "title": 0.0,
+          "score": 0.2333
+        }
+      ],
+      "selected_ids": [],
+      "gold_ids": [
+        "target"
+      ],
+      "matching_correct": false,
+      "token_edits_on_selected": [],
+      "narrow_rule": {
+        "result": "unmatched",
+        "reason": "No candidate above 0.50; deletion not proved."
+      },
+      "expert_label_in_fixture": "equivalent"
+    },
+    {
+      "case": "numeric",
+      "old_text": "The controller shall wait at least 10 ns after CMD_X.",
+      "old_title": "CMD_X timing",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "target"
+          ],
+          "text": "The controller shall wait at least 12 ns after CMD_X.",
+          "lexical": 0.9091,
+          "title": 1.0,
+          "score": 0.9364
+        },
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.3333,
+          "title": 0.0,
+          "score": 0.2333
+        }
+      ],
+      "selected_ids": [
+        "target"
+      ],
+      "gold_ids": [
+        "target"
+      ],
+      "matching_correct": true,
+      "token_edits_on_selected": [
+        {
+          "operation": "replace",
+          "old": "10",
+          "new": "12"
+        }
+      ],
+      "narrow_rule": {
+        "result": "requirement_changed",
+        "field": "minimum_wait",
+        "old": "10 ns",
+        "new": "12 ns"
+      },
+      "expert_label_in_fixture": "requirement_changed"
+    },
+    {
+      "case": "negation",
+      "old_text": "The controller shall issue CMD_X.",
+      "old_title": "CMD_X timing",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "target"
+          ],
+          "text": "The controller shall not issue CMD_X.",
+          "lexical": 0.9231,
+          "title": 1.0,
+          "score": 0.9462
+        },
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.4615,
+          "title": 0.0,
+          "score": 0.3231
+        }
+      ],
+      "selected_ids": [
+        "target"
+      ],
+      "gold_ids": [
+        "target"
+      ],
+      "matching_correct": true,
+      "token_edits_on_selected": [
+        {
+          "operation": "insert",
+          "old": "",
+          "new": "not"
+        }
+      ],
+      "narrow_rule": {
+        "result": "requirement_changed",
+        "field": "polarity",
+        "old": false,
+        "new": true
+      },
+      "expert_label_in_fixture": "requirement_changed"
+    },
+    {
+      "case": "inherited_condition",
+      "old_text": "The controller shall wait at least 10 ns after CMD_X.",
+      "old_title": "CMD_X timing",
+      "old_context": "This section applies in Mode_A.",
+      "new_context": "This section applies in Mode_B.",
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "target"
+          ],
+          "text": "The controller shall wait at least 10 ns after CMD_X.",
+          "lexical": 1.0,
+          "title": 1.0,
+          "score": 1.0
+        },
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.3333,
+          "title": 0.0,
+          "score": 0.2333
+        }
+      ],
+      "selected_ids": [
+        "target"
+      ],
+      "gold_ids": [
+        "target"
+      ],
+      "matching_correct": true,
+      "token_edits_on_selected": [],
+      "narrow_rule": {
+        "result": "requirement_changed",
+        "field": "inherited_condition",
+        "old": "This section applies in Mode_A.",
+        "new": "This section applies in Mode_B."
+      },
+      "expert_label_in_fixture": "requirement_changed"
+    },
+    {
+      "case": "repeated_boilerplate",
+      "old_text": "Wait until the operation completes.",
+      "old_title": "Calibration",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "target"
+          ],
+          "text": "Wait for the operation to finish.",
+          "lexical": 0.6154,
+          "title": 1.0,
+          "score": 0.7308
+        },
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "Wait until the operation completes.",
+          "lexical": 1.0,
+          "title": 0.0,
+          "score": 0.7
+        }
+      ],
+      "selected_ids": [
+        "target"
+      ],
+      "gold_ids": [
+        "target"
+      ],
+      "matching_correct": true,
+      "token_edits_on_selected": [
+        {
+          "operation": "replace",
+          "old": "until",
+          "new": "for"
+        },
+        {
+          "operation": "replace",
+          "old": "completes",
+          "new": "to finish"
+        }
+      ],
+      "narrow_rule": {
+        "result": "unresolved",
+        "reason": "No sound rule for this wording and its dependencies."
+      },
+      "expert_label_in_fixture": "equivalent"
+    },
+    {
+      "case": "split",
+      "old_text": "The controller shall wait at least 10 ns after CMD_X. The device shall remain in State_Z.",
+      "old_title": "CMD_X timing",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "a",
+            "b"
+          ],
+          "text": "The controller shall wait at least 10 ns after CMD_X. The device shall remain in State_Z.",
+          "lexical": 1.0,
+          "title": 1.0,
+          "score": 0.98
+        },
+        {
+          "new_ids": [
+            "a"
+          ],
+          "text": "The controller shall wait at least 10 ns after CMD_X.",
+          "lexical": 0.7586,
+          "title": 1.0,
+          "score": 0.831
+        },
+        {
+          "new_ids": [
+            "b"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.56,
+          "title": 1.0,
+          "score": 0.692
+        }
+      ],
+      "selected_ids": [
+        "a",
+        "b"
+      ],
+      "gold_ids": [
+        "a",
+        "b"
+      ],
+      "matching_correct": true,
+      "token_edits_on_selected": [],
+      "narrow_rule": {
+        "result": "same_local_text",
+        "reason": "Other dependencies not checked in this demo."
+      },
+      "expert_label_in_fixture": "equivalent"
+    },
+    {
+      "case": "deletion",
+      "old_text": "The controller shall wait at least 10 ns after CMD_X.",
+      "old_title": "CMD_X timing",
+      "old_context": null,
+      "new_context": null,
+      "ranked_candidates": [
+        {
+          "new_ids": [
+            "other"
+          ],
+          "text": "The device shall remain in State_Z.",
+          "lexical": 0.3333,
+          "title": 0.0,
+          "score": 0.2333
+        }
+      ],
+      "selected_ids": [],
+      "gold_ids": [],
+      "matching_correct": true,
+      "token_edits_on_selected": [],
+      "narrow_rule": {
+        "result": "unmatched",
+        "reason": "No candidate above 0.50; deletion not proved."
+      },
+      "expert_label_in_fixture": "requirement_changed"
+    }
+  ]
+}
