@@ -1,0 +1,944 @@
+{
+  "synthetic_only": true,
+  "case_count": 15,
+  "encoder_tested": false,
+  "limitations": [
+    "Hand-authored tiny diagnostic, not held-out performance.",
+    "Per-case candidate pools; no full-document global matching.",
+    "Similarity-only semantic baselines intentionally lack dependency analysis.",
+    "No measured semantic LLM or encoder result."
+  ],
+  "matching": {
+    "exact": {
+      "gold_nonempty_groups": 14,
+      "correct_groups": 4,
+      "deletion_case_unmatched": true,
+      "detail": [
+        {
+          "case": "unchanged",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "line_wrap",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "paraphrase",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "numeric",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "negation",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "boundary",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "modality",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "condition",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "unit_equivalence",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "renumber",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "inherited_condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "repeated_boilerplate",
+          "predicted_ids": [
+            "other"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "section_move",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "split",
+          "predicted_ids": [],
+          "gold_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "case": "deletion",
+          "predicted_ids": [],
+          "gold_ids": []
+        }
+      ]
+    },
+    "lexical": {
+      "gold_nonempty_groups": 14,
+      "correct_groups": 11,
+      "deletion_case_unmatched": true,
+      "detail": [
+        {
+          "case": "unchanged",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "line_wrap",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "paraphrase",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "numeric",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "negation",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "boundary",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "modality",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "unit_equivalence",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "renumber",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "inherited_condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "repeated_boilerplate",
+          "predicted_ids": [
+            "other"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "section_move",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "split",
+          "predicted_ids": [
+            "a"
+          ],
+          "gold_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "case": "deletion",
+          "predicted_ids": [],
+          "gold_ids": []
+        }
+      ]
+    },
+    "lexical_context": {
+      "gold_nonempty_groups": 14,
+      "correct_groups": 12,
+      "deletion_case_unmatched": true,
+      "detail": [
+        {
+          "case": "unchanged",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "line_wrap",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "paraphrase",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "numeric",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "negation",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "boundary",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "modality",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "unit_equivalence",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "renumber",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "inherited_condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "repeated_boilerplate",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "section_move",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "split",
+          "predicted_ids": [
+            "a"
+          ],
+          "gold_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "case": "deletion",
+          "predicted_ids": [],
+          "gold_ids": []
+        }
+      ]
+    },
+    "lexical_context_groups": {
+      "gold_nonempty_groups": 14,
+      "correct_groups": 13,
+      "deletion_case_unmatched": true,
+      "detail": [
+        {
+          "case": "unchanged",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "line_wrap",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "paraphrase",
+          "predicted_ids": [],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "numeric",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "negation",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "boundary",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "modality",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "unit_equivalence",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "renumber",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "inherited_condition",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "repeated_boilerplate",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "section_move",
+          "predicted_ids": [
+            "target"
+          ],
+          "gold_ids": [
+            "target"
+          ]
+        },
+        {
+          "case": "split",
+          "predicted_ids": [
+            "a",
+            "b"
+          ],
+          "gold_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "case": "deletion",
+          "predicted_ids": [],
+          "gold_ids": []
+        }
+      ]
+    }
+  },
+  "comparison_on_gold_alignment": {
+    "any_text_change": {
+      "tp": 6,
+      "fp": 4,
+      "fn": 1,
+      "precision": 0.6,
+      "recall": 0.8571428571428571,
+      "detail": [
+        {
+          "case": "unchanged",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "line_wrap",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "paraphrase",
+          "lexical_similarity": 0.230769,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "numeric",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "negation",
+          "lexical_similarity": 0.923077,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "boundary",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "modality",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "condition",
+          "lexical_similarity": 0.928571,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "unit_equivalence",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "renumber",
+          "lexical_similarity": 0.888889,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "inherited_condition",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "repeated_boilerplate",
+          "lexical_similarity": 0.615385,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "section_move",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "split",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "deletion",
+          "lexical_similarity": 0.0,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        }
+      ]
+    },
+    "similarity_below_0.85": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 5,
+      "precision": 0.4,
+      "recall": 0.2857142857142857,
+      "detail": [
+        {
+          "case": "unchanged",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "line_wrap",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "paraphrase",
+          "lexical_similarity": 0.230769,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "numeric",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "negation",
+          "lexical_similarity": 0.923077,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "boundary",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "modality",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "condition",
+          "lexical_similarity": 0.928571,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "unit_equivalence",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "renumber",
+          "lexical_similarity": 0.888889,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "inherited_condition",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "repeated_boilerplate",
+          "lexical_similarity": 0.615385,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "section_move",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "split",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "deletion",
+          "lexical_similarity": 0.0,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        }
+      ]
+    },
+    "similarity_below_0.90": {
+      "tp": 2,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.3333333333333333,
+      "recall": 0.2857142857142857,
+      "detail": [
+        {
+          "case": "unchanged",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "line_wrap",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "paraphrase",
+          "lexical_similarity": 0.230769,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "numeric",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "negation",
+          "lexical_similarity": 0.923077,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "boundary",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "modality",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "condition",
+          "lexical_similarity": 0.928571,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "unit_equivalence",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "renumber",
+          "lexical_similarity": 0.888889,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "inherited_condition",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "repeated_boilerplate",
+          "lexical_similarity": 0.615385,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "section_move",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "split",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "deletion",
+          "lexical_similarity": 0.0,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        }
+      ]
+    },
+    "similarity_below_0.95": {
+      "tp": 6,
+      "fp": 4,
+      "fn": 1,
+      "precision": 0.6,
+      "recall": 0.8571428571428571,
+      "detail": [
+        {
+          "case": "unchanged",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "line_wrap",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "paraphrase",
+          "lexical_similarity": 0.230769,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "numeric",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "negation",
+          "lexical_similarity": 0.923077,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "boundary",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "modality",
+          "lexical_similarity": 0.909091,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "condition",
+          "lexical_similarity": 0.928571,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "unit_equivalence",
+          "lexical_similarity": 0.818182,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "renumber",
+          "lexical_similarity": 0.888889,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "inherited_condition",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": true
+        },
+        {
+          "case": "repeated_boilerplate",
+          "lexical_similarity": 0.615385,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "section_move",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "split",
+          "lexical_similarity": 1.0,
+          "predicted_requirement_changed": false,
+          "gold_requirement_changed": false
+        },
+        {
+          "case": "deletion",
+          "lexical_similarity": 0.0,
+          "predicted_requirement_changed": true,
+          "gold_requirement_changed": true
+        }
+      ]
+    }
+  }
+}
