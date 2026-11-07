@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.1",
+  "synthetic": true,
+  "description": "Artificial illustration; not actual LPDDR6 requirements or model output.",
+  "input_blocks": [
+    {
+      "document_id": "synthetic-A",
+      "block_id": "p17",
+      "section_path": [
+        "4 Operations",
+        "4.2 CMD_X"
+      ],
+      "raw_text": "In Mode_A, the controller shall wait at least 10 ns after CMD_X."
+    },
+    {
+      "document_id": "synthetic-B",
+      "block_id": "p21",
+      "section_path": [
+        "5 Operations",
+        "5.1 CMD_X"
+      ],
+      "raw_text": "In Mode_A, the controller shall wait at least 12 ns after CMD_X."
+    }
+  ],
+  "alignment_group": {
+    "group_id": "AG-001",
+    "old_block_ids": [
+      "p17"
+    ],
+    "new_block_ids": [
+      "p21"
+    ],
+    "structural_changes": [
+      "moved",
+      "modified"
+    ],
+    "decision_status": "confirmed",
+    "confirmed_by": "synthetic_fixture_author"
+  },
+  "event": {
+    "event_id": "EVT-001",
+    "alignment_group_id": "AG-001",
+    "old_document_id": "synthetic-A",
+    "new_document_id": "synthetic-B",
+    "primary_section": {
+      "document_id": "synthetic-B",
+      "section_id": "sec-5.1"
+    },
+    "structural_changes": [
+      "moved",
+      "modified"
+    ],
+    "semantic_label": "requirement_changed",
+    "changed_slots": [
+      "constraint.min"
+    ],
+    "origin": "direct",
+    "root_event_id": null,
+    "severity": "high",
+    "severity_reason": "Illustrative review priority; real severity requires domain assessment.",
+    "old_requirement": {
+      "subject": "controller",
+      "action": "wait",
+      "condition": "Mode_A",
+      "reference_event": "CMD_X",
+      "temporal_relation": "after",
+      "constraint": {
+        "operator": ">=",
+        "value": 10,
+        "unit": "ns"
+      }
+    },
+    "new_requirement": {
+      "subject": "controller",
+      "action": "wait",
+      "condition": "Mode_A",
+      "reference_event": "CMD_X",
+      "temporal_relation": "after",
+      "constraint": {
+        "operator": ">=",
+        "value": 12,
+        "unit": "ns"
+      }
+    },
+    "counterexample": {
+      "condition": "Mode_A",
+      "delay_ns": 11,
+      "old_satisfied": true,
+      "new_satisfied": false
+    },
+    "evidence": [
+      {
+        "document_id": "synthetic-A",
+        "block_id": "p17",
+        "start": 0,
+        "end": 64,
+        "quote": "In Mode_A, the controller shall wait at least 10 ns after CMD_X.",
+        "role": "old_requirement"
+      },
+      {
+        "document_id": "synthetic-B",
+        "block_id": "p21",
+        "start": 0,
+        "end": 64,
+        "quote": "In Mode_A, the controller shall wait at least 12 ns after CMD_X.",
+        "role": "new_requirement"
+      }
+    ],
+    "unresolved_questions": [
+      "Actual downstream implementation impact requires project-specific evidence."
+    ],
+    "confidence": null,
+    "review_status": "pending",
+    "related_impacts": []
+  }
+}
